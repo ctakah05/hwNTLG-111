@@ -231,7 +231,6 @@ body{
 }
 
 
-
 .header {
   background: url(../sources/images/banner-bg.jpg) no-repeat;
   background-size: cover;
@@ -243,6 +242,9 @@ body{
   text-align: center;
   margin-bottom: 64px;
   position: relative;
+  max-width: 1666px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header::before{
   content: '';
@@ -261,21 +263,27 @@ body {
   margin:0px auto;
   font-family: OpenSans;
 }
-.menu_logo{
-  position: relative;
+.logo {
+    position: relative;
   z-index: 2;
   width: 179px;
+  height: 40px;
+  object-fit: contain;
 }
 .menu {
   position: relative;
   z-index: 2;
+  width: 1200px;
   display: flex;
   font-family: OpenSans;
   justify-content: center;
   align-content: center;
+  align-content: space-between;
   gap: 35px;
-  padding: 40px 245px;
+  padding: 40px 15px;
   font-size: 13px;
+    margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 }
 .about {
@@ -283,7 +291,7 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  margin: 50px auto;
+  margin: 15px auto;
   font-size: 44.5px;
   font-family: OpenSans;
   font-weight: bold;
@@ -294,12 +302,6 @@ body {
   text-align: center;
   color: #fff;
 
-}
-main{
-
-}
-.menu_logo{
-  margin-right: auto;
 }
 
 .content{
