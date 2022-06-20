@@ -658,7 +658,6 @@ display:flex;
 min-height:320px;
 justify-content:space-between;
 align-items:stretch;
-flex-wrap: wrap;
 }
 
 .trend_tag_block,.post_tag_list {
@@ -726,8 +725,11 @@ padding-bottom: 30px;
 
 }
 .trend_slide {
-min-width: 49.8%;
+width: 49.8%;
 margin-bottom: 0.3%;
+}
+.now_trend {
+  flex-wrap: wrap;
 }
 }
 
@@ -746,6 +748,6 @@ max-width:272px;
 max-width:777px;
 }
 .trend_slide {
-min-width: 24.8%;
+width: 24.8%;
 }
 }
