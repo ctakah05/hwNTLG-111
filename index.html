@@ -34,7 +34,19 @@
 						<a class="menu_item" href="#0">контакты</a>
 					</li>
 				</ul>
-										
+                <div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <ul class="menu__box">
+    <li><a class="menu__item" href="#">Главная</a></li>
+    <li><a class="menu__item" href="#">посты</a></li>
+    <li><a class="menu__item" href="#">статьи</a></li>
+    <li><a class="menu__item" href="#">теги</a></li>
+    <li><a class="menu__item" href="#">контакты</a></li>
+  </ul>
+</div>
 			</nav>
 
 		</div>
@@ -336,9 +348,11 @@
 	</h2>
 	<div class="products">
 		<article class="product">
-			<div class="product__imgbox">
-				<img class="product__img" src="images/shop-item-desk1.jpg" alt="Превью товара">
-			</div>
+						<picture class="product__imgbox">
+				<source srcset="images/shop-item-tablet1.jpg" media="(max-width: 1200px)">
+					<source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+						<img class="product__img" src="images/shop-item-desk1.jpg" alt="подушки на диван">
+					</picture>
 			<div class="product__body">
 				<div class="product__content">
 					<h2 class="product__title">подушки на диван</h2>
@@ -363,74 +377,84 @@
 		</article>
 
 		<article class="product">
-			<div class="product__imgbox">
-				<img class="product__img" src="images/shop-item-desk2.jpg" alt="Превью товара">
-			</div>
-			<div class="product__body">
-				<div class="product__content">
-					<h2 class="product__title">кукла "зайчик"</h2>
-					<div class="product__description">
-						<p>Интерьерная рукодельная кукла "зайчик", созданию которой посвящена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+			<picture class="product__imgbox">
+				<source srcset="images/shop-item-tablet2.jpg" media="(max-width: 1200px)">
+					<source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+						<img class="product__img" src="images/shop-item-desk2.jpg" alt="кукла зайчик">
+					</picture>
+					<div class="product__body">
+						<div class="product__content">
+							<h2 class="product__title">кукла "зайчик"</h2>
+							<div class="product__description">
+								<p>Интерьерная рукодельная кукла "зайчик", созданию которой посвящена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+							</div>
+						</div>
+						<footer class="product__footer">
+							<div class="product__prices">
+								<span class="product__price product__price_old">
+									<span class="product__price-value"></span>
+									<span class="product__rub"></span>
+								</span>
+								<span class="product__price">
+									<span class="product__price-value">2500</span>
+									<span class="product__rub">₽</span>
+								</span>
+							</div>
+							<button class="product__button" type="button">Купить</button>
+						</footer>
 					</div>
-				</div>
-				<footer class="product__footer">
-					<div class="product__prices">
-						<span class="product__price product__price_old">
-							<span class="product__price-value"></span>
-							<span class="product__rub"></span>
-						</span>
-						<span class="product__price">
-							<span class="product__price-value">2500</span>
-							<span class="product__rub">₽</span>
-						</span>
-					</div>
-					<button class="product__button" type="button">Купить</button>
-				</footer>
-			</div>
-		</article>
+				</article>
 
-		<article class="product">
-			<div class="product__imgbox">
-				<img class="product__img" src="images/shop-item-desk3.jpg" alt="Превью товара">
-			</div>
-			<div class="product__body">
-				<div class="product__content">
-					<h2 class="product__title">шестиугольная рамка</h2>
-					<div class="product__description">
-						<p>Необычная рамка для украшения дома из видео <a href="#0">"как сделать рамку из подручных средств за 30 минут</a>.</p>
+				<article class="product">
+											<picture class="product__imgbox">
+				<source srcset="images/shop-item-tablet3.jpg" media="(max-width: 1200px)">
+					<source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
+						<img class="product__img" src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
+					</picture>
+					<div class="product__body">
+						<div class="product__content">
+							<h2 class="product__title">шестиугольная рамка</h2>
+							<div class="product__description">
+								<p>Необычная рамка для украшения дома из видео <a href="#0">"как сделать рамку из подручных средств за 30 минут</a>.</p>
+							</div>
+						</div>
+						<footer class="product__footer">
+							<div class="product__prices">
+								<span class="product__price product__price_old">
+									<span class="product__price-value">500</span>
+									<span class="product__rub">₽</span>
+								</span>
+								<span class="product__price">
+									<span class="product__price-value">400</span>
+									<span class="product__rub">₽</span>
+								</span>
+							</div>
+							<button class="product__button" type="button">Купить</button>
+						</footer>
 					</div>
-				</div>
-				<footer class="product__footer">
-					<div class="product__prices">
-						<span class="product__price product__price_old">
-							<span class="product__price-value">500</span>
-							<span class="product__rub">₽</span>
-						</span>
-						<span class="product__price">
-							<span class="product__price-value">400</span>
-							<span class="product__rub">₽</span>
-						</span>
-					</div>
-					<button class="product__button" type="button">Купить</button>
-				</footer>
+				</article>
 			</div>
-		</article>
-	</div>
-	<footer class="footer">
-		<address>
-			<ul class="address">
-				<li>
-					<a class="social_icon s1" href="#0"></a>
-				</li>
-				<li>
-					<a class="social_icon s2" href="#0"></a>
-				</li>
-				<li>
-					<a class="social_icon s3" href="#0"></a>
-				</li>
-			</ul>
-		</address>
-		<a href="#0" class="Copyright">Copyright © 2009–2019 City Blog LLC.</a>
-	</footer>
-</body>
-</html>
+			<footer class="footer">
+				<address>
+					<ul class="address">
+						<li>
+							<a class="social_icon s1" href="#0"></a>
+						</li>
+						<li>
+							<a class="social_icon s2" href="#0"></a>
+						</li>
+						<li>
+							<a class="social_icon s3" href="#0"></a>
+						</li>
+						<li>
+							<a class="social_icon s4" href="#0"></a>
+						</li>
+						<li>
+							<a class="social_icon s5" href="#0"></a>
+						</li>
+					</ul>
+				</address>
+				<a href="#0" class="Copyright">Copyright © 2009–2019 City Blog LLC.</a>
+			</footer>
+		</body>
+		</html>
