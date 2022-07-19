@@ -49,7 +49,8 @@ h1,h2,h3,h4 {
   letter-spacing:normal;
 }
 .menu_item:hover {
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+text-decoration: underline;
 }
 
 #menu__toggle {
@@ -208,7 +209,8 @@ body {
   color:#0f0d0e;
   margin:0 0 15px;
 }
-.post_title:hover, .news_item_title:hover {
+
+.news_item_title:hover {
   text-shadow: 
     1px 0px 1px #ccc, 0px 1px 1px #eee, 
     2px 1px 1px #ccc, 1px 2px 1px #eee,
@@ -362,6 +364,10 @@ body {
   cursor:pointer;
 }
 
+.search_button:hover {
+  background-color: #fffff;
+}
+
 .email_button {
   margin-top:16px;
   width:100%;
@@ -399,6 +405,10 @@ body {
   padding-left:15px;
 }
 
+.email_input:hover,.search_input:hover {
+  border: solid 1px #b59f5b;
+}
+
 .tag {
   border:solid 2px #eee;
   display:block;
@@ -431,19 +441,17 @@ body {
   border-bottom:solid 3px #eee;
 }
 .theme:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-radius: 30px;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.5s; */
+  color: #b59f5b;
 }
-.post_tag:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
-    transition: 0.5s; 
+.post_tag:hover,.trend_tag:hover {
+  text-decoration: underline;
 }
- .trend_tag:hover {
- color: #fff;
- }
- .trend:hover {
+
+ .trend:hover,.post_title:hover {
   color: #b59f5b;
  }
 .tets {
